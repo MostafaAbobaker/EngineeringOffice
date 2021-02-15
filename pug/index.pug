@@ -12,7 +12,7 @@ html(lang="AR")
     //end Header
     //- Start Slider
     Section.slider-row
-      div(class="login-form wow animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="100")
+      div(class="login-form view-mobile  wow animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="100")
         form
           h4  البحث عن المكاتب
           .form-group
@@ -33,22 +33,22 @@ html(lang="AR")
           li(data-target='#carouselExampleCaptions', data-slide-to='2')
         .carousel-inner
           .carousel-item.active
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption
               h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
               p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
               a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
           .carousel-item
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption
               h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
               p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
               a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
           .carousel-item
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption
               h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
               p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
               a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
           .carousel-item
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption
               h3(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")  تسجيل المكاتب المحلية في الكويت  
               p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي 
               a(href="#" class=" wow animate__fadeInUp read-more" data-wow-duration="3s" data-wow-offset="100") اقراء المزيد
@@ -105,7 +105,7 @@ html(lang="AR")
         .row
           .col-lg-12
             .Advertising-box.text-center
-              img(src="img/17838774751976075048.png", alt="")
+              img.w-100(src="img/17838774751976075048.png", alt="")
     //End Advertising
     // Start category
     section.category
@@ -265,5 +265,5 @@ html(lang="AR")
     include include/footer.pug
     // Start Scripts
     include include/script.pug
-    script.
+    script#viewmobilscript.
       new WOW().init();

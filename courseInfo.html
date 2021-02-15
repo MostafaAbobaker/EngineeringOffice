@@ -22,9 +22,9 @@
     <!-- Font awesame Icon-->
     <link rel="stylesheet" href="css/fontawesome.min.css"/>
     <!-- Bootstrap 4.5v-->
-    <link rel="stylesheet" href="css/bootstrap.rtl.css"/>
+    <link rel="stylesheet" href="css/bootstrap.rtl.css" id="bootstrapID"/>
     <!-- My style-->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" id="styleLTR"/>
   </head>
   <body>
     <!-- start Header-->
@@ -32,7 +32,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9">
-            <div class="info-shop">
+            <div class="info-shop view-mobile">
               <div class="time"><i class="far fa-clock fa-fw"></i> من الأحد إلى الخميس : 9:00 – 13:50 / 17:00 - 20:30</div>
               <div class="time">الجمعة و السبت: اجازة</div>
               <div class="time"><i class="fas fa-mobile-alt fa-fw"></i><span style="direction: ltr; display: inline-block;">+965 66923894</span></div>
@@ -41,7 +41,7 @@
           <div class="col-lg-3">
             <div class="info-shop justify-content-end">
               <div class="socail-media"><a href=""><i class="fab fa-facebook-f fa-fw"></i></a><a href=""><i class="fab fa-instagram fa-fw"></i></a><a href=""><i class="fab fa-twitter fa-fw"></i></a></div>
-              <div class="time lang"><a href="">English</a></div>
+              <div class="time lang" id="lang"><a href="#">English</a></div>
             </div>
           </div>
         </div>
@@ -144,11 +144,11 @@
             </table>
           </div>
         </div>
-        <div class="row my-5">
-          <div class="col-3">
+        <div class="row my-5 course-description-info">
+          <div class="col-lg-3 col-sm-12 mb-3">
             <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">الوصف</a><a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">المساقات</a><a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">  ستتعلم في هذا التخصص</a><a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"> فريق التخصص</a></div>
           </div>
-          <div class="col-9">
+          <div class="col-lg-9 col-sm-12 mb-3">
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> 
                 <h5 class="mb-3">الوصف</h5>
@@ -189,10 +189,10 @@
               <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"> 
                 <div class="card mb-3">
                   <div class="row no-gutters">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                       <div class="image"><img class="w-100" src="../img/profile.png" alt="..."/></div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 col-sm-12">
                       <div class="card-body">
                         <h5 class="card-title">محمد حمد</h5>
                         <p class="card-text">المهندس محمد حمد العمر ٢٨ سنة ويعمل حاليا بمجال التصميم الهندسي بقسم الكهرباء والاتصالات ولديه خبرة تزيد عن ٥ سنين بهذا المجال , يمتلك شهادات عديدة بمجال الشبكات والاتصالات وقام بتصميم مشاريع كثيرة و مختلفة في بلدان كثيرة منها الخليج وبلدان الشرق الاوسط ولديه خبرة خاصة على برنامج التصميم الهندسي الريفيت بمختلف اصداراتو</p>
@@ -202,10 +202,10 @@
                 </div>
                 <div class="card mb-3">
                   <div class="row no-gutters">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                       <div class="image"><img class="w-100" src="../img/profile.png" alt="..."/></div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 col-sm-12">
                       <div class="card-body">
                         <h5 class="card-title">عمر بلال</h5>
                         <p class="card-text">أخصائي تكنولوجيا المعلومات وأمن المعلومات، حاصل على العديد من الشهادات العالمية من مايكروسفت و EC-Council وسيسكو. لديه شغف في التعليم الإلكتروني ولديه العديد من الدورات على منصة يودمي. لديه خبرة كبيرة في تطوير مواقع الووردبريس وعمل التطبيقات للهواتف الذكية. يشغل منصب مدير مساقات في منصة إدراك وقام بالاشراف على هذا المساق.</p>

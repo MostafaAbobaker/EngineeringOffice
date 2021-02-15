@@ -62,6 +62,18 @@ $("document").ready(function () {
       return n.replace(/,/g, '.');
     }
   });
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    $('#viewmobilscript').empty();
+  }else{
+    
+  }
+  
+  
+  
+});
+$("#lang").click(function(){
+  $("#bootstrapID").attr("href", "css/bootstrap.min.css");
+  $("#styleLTR").attr("href", "css/styleLTR.css");
 });
 
 

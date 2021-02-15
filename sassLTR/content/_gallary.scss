@@ -11,7 +11,7 @@
     content: '';
     position: absolute;
     top: 0%;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 250px;
     background: url(../img/18948.jpg) no-repeat center center ;
@@ -24,8 +24,8 @@
   ul.nav {
     margin: 30px 0;
     li.nav-item {
-      margin-left: 10px;
       margin-right: 10px;
+      margin-left: 10px;
       @media (max-width: 576px) {
         margin-bottom: 10px;
       }
@@ -49,12 +49,12 @@ section.Vedios-info {
   padding-top: 340px;
   background-color: #333;
   position: relative;
-  background: linear-gradient(135deg, rgba(212,89,91,1) 0%, rgba(142,53,86,1) 100%);
+  background: linear-gradient(-135deg, rgba(212,89,91,1) 0%, rgba(142,53,86,1) 100%);
   &::after {
     content: '';
     position: absolute;
     top: 0%;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 300px;
     background: url(../img/videos.png) no-repeat center center ;
@@ -80,7 +80,7 @@ section.Vedios-info {
       overflow-y: scroll;
       border: 1px solid #bbb;
       margin: 10px;
-      margin-left: -5px;
+      margin-right: -5px;
       li {
         transition: all .7s ease-in-out;
         margin-bottom: 10px;
@@ -112,7 +112,7 @@ section.Vedios-info {
         }
         .desc {
           display: inline-block;
-          padding-right: 20px;
+          padding-left: 20px;
           width: 75%;
           font-size: 0.8em;
           padding: 13px 5px;
